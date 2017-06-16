@@ -1,4 +1,4 @@
-"""
+0"""
 SolidarityBot Python Web Scraper
 
 Attempts to extract relevant components from given web pages
@@ -45,5 +45,10 @@ def main():
 
     # ----- Beautiful soup usage starts -----
     htmlSoup = BeautifulSoup(page,'html.parser') # Need url to be opened as page with html content
+
+    # div class="tribe-events-event-cost (for cost of event
+    
+    timeDateStartRaw = htmlSoup.find_all("span", class="date-start dtstart") #returns list of all date-times
+    for i in timeDateStartRaw:
 
     # ----- Beautiful soup usage ends
