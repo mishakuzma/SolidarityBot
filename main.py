@@ -9,12 +9,7 @@ Output: List of strings:
     -----
 """
 
-# Use urllib2 to access web pages
-# Use BeautifulSoup to access scraper functions
-
-import urllib3
-import json
-from bs4 import BeautifulSoup
+import
 
 def main():
     # ----- URL Definition for the club's page -----
@@ -47,7 +42,7 @@ def main():
     htmlSoup = BeautifulSoup(page,'html.parser') # Need url to be opened as page with html content
 
     # div class="tribe-events-event-cost (for cost of event
-    
+
     timeDateStartRaw = htmlSoup.find_all("span", class="date-start dtstart") #returns list of all date-times
     for i in timeDateStartRaw:
 
